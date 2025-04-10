@@ -1,0 +1,1 @@
+# crypto-provider-hashicorp-vault-plugin
