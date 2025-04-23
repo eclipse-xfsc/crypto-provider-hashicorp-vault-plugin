@@ -3,7 +3,7 @@ module github.com/eclipse-xfsc/crypto-provider-hashicorp-vault-plugin
 go 1.23.0
 
 require (
-	github.com/eclipse-xfsc/crypto-provider-core v1.4.1-crypto
+	github.com/eclipse-xfsc/crypto-provider-core v1.4.1-goarchv1230
 	github.com/hashicorp/vault/api v1.14.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/viper v1.18.2
