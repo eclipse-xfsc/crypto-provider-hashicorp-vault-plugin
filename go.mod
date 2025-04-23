@@ -1,8 +1,6 @@
 module github.com/eclipse-xfsc/crypto-provider-hashicorp-vault-plugin
 
-go 1.24.0
-
-toolchain go1.24.2
+go 1.23.0
 
 require (
 	github.com/eclipse-xfsc/crypto-provider-core v1.4.1-crypto
