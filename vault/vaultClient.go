@@ -18,8 +18,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/eclipse-xfsc/crypto-provider-core/types"
-	"github.com/eclipse-xfsc/crypto-provider-hashicorp-vault-plugin/utils"
+	"github.com/eclipse-xfsc/crypto-provider-core/v2/types"
+	"github.com/eclipse-xfsc/crypto-provider-hashicorp-vault-plugin/v2/utils"
 	vaultpkg "github.com/hashicorp/vault/api"
 )
 

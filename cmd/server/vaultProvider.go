@@ -2,14 +2,31 @@ package main
 
 import (
 	"errors"
+	"os"
 
-	"github.com/eclipse-xfsc/crypto-provider-core/types"
-	"github.com/eclipse-xfsc/crypto-provider-hashicorp-vault-plugin/vault"
+	"github.com/eclipse-xfsc/crypto-provider-core/v2/types"
+	"github.com/eclipse-xfsc/crypto-provider-hashicorp-vault-plugin/v2/vault"
+	"github.com/sirupsen/logrus"
 )
 
-var Plugin vaultModule //export Plugin Symbol
+type VaultCryptoProvider struct {
+}
 
-type vaultModule struct{}
+func main() {
+	addr := os.Getenv("CRYPTO_PROVIDER_HASHICORP_VAULT")
+	if addr == "" {
+		addr = "0.0.0.0:50051"
+	}
+	logrus.Info("CRYPTO_PROVIDER_HASHICORP_VAULT ADDR: " + addr)
+	impl := new(VaultCryptoProvider)
+	err, stop := types.Start(impl, addr)
+
+	defer stop()
+
+	if err != nil {
+		logrus.Error(err)
+	}
+}
 
 func convertToCryptoKey(desc vault.VaultKeyDescription, identifier types.CryptoIdentifier) types.CryptoKey {
 	return types.CryptoKey{
@@ -21,10 +38,6 @@ func convertToCryptoKey(desc vault.VaultKeyDescription, identifier types.CryptoI
 			Params:     desc.Params,
 		},
 	}
-}
-
-func (l *vaultModule) GetCryptoProvider() types.CryptoProvider {
-	return new(VaultCryptoProvider)
 }
 
 func buildEnginePath(context types.CryptoContext) string {

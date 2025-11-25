@@ -3,8 +3,8 @@ package main
 import (
 	"testing"
 
-	core "github.com/eclipse-xfsc/crypto-provider-core"
-	"github.com/eclipse-xfsc/crypto-provider-core/types"
+	core "github.com/eclipse-xfsc/crypto-provider-core/v2"
+	"github.com/eclipse-xfsc/crypto-provider-core/v2/types"
 	"github.com/spf13/viper"
 )
 
