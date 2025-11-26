@@ -18,6 +18,10 @@ github.com/eclipse-xfsc/crypto-provider-core/v2 v2.0.0 h1:/uPlIaOufgCol1ZUpPY/0P
 github.com/eclipse-xfsc/crypto-provider-core/v2 v2.0.0/go.mod h1:hGNyvd79fLlKlN10VsturS7zHEGyHTpYLMSvIdL8ZoQ=
 github.com/eclipse-xfsc/crypto-provider-core/v2 v2.1.0-alpha h1:hA4EsN9NfOd+2Icg5p+g0srx1m9BD09TCx/40rR9YC8=
 github.com/eclipse-xfsc/crypto-provider-core/v2 v2.1.0-alpha/go.mod h1:hGNyvd79fLlKlN10VsturS7zHEGyHTpYLMSvIdL8ZoQ=
+github.com/eclipse-xfsc/crypto-provider-core/v2 v2.1.0 h1:zxhCNwkmtV0i0f7zsRmBYGIe9k0EEpJs2FxQxyRbIns=
+github.com/eclipse-xfsc/crypto-provider-core/v2 v2.1.0/go.mod h1:hGNyvd79fLlKlN10VsturS7zHEGyHTpYLMSvIdL8ZoQ=
+github.com/eclipse-xfsc/crypto-provider-core/v2 v2.2.0 h1:dBuR7gZE/8W78hTwWaeEqVIn/FczKUakEtBzGsNlBRo=
+github.com/eclipse-xfsc/crypto-provider-core/v2 v2.2.0/go.mod h1:hGNyvd79fLlKlN10VsturS7zHEGyHTpYLMSvIdL8ZoQ=
 github.com/fatih/color v1.16.0 h1:zmkK9Ngbjj+K0yRhTVONQh1p/HknKYSlNT+vZCzyokM=
 github.com/fatih/color v1.16.0/go.mod h1:fL2Sau1YI5c0pdGEVCbKQbLXB6edEj1ZgiY4NijnWvE=
 github.com/fatih/color v1.18.0 h1:S8gINlzdQ840/4pfAwic/ZE0djQEH3wM94VfqLTZcOM=
