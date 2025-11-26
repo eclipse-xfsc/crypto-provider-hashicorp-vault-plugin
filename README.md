@@ -6,7 +6,13 @@ This plugin provides key usage by using the hashicorp vault signing engine.
 
 ## Usage
 
-Put the plugin into a folder which is configured over the core env variable as module path and set additionally the envs for VAULT_ADRESS and VAULT_TOKEN
+Start the Plugin under the desired adress and connect any service to it. 
+
+Environment Variables: 
+
+|Variable|Example Value|
+|--------|-----|
+|CRYPTO_PROVIDER_HASHICORP_VAULT_ADDRESS|0.0.0.0:50051|
 
 ## Security Advice
 

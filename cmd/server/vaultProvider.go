@@ -13,7 +13,7 @@ type VaultCryptoProvider struct {
 }
 
 func main() {
-	addr := os.Getenv("CRYPTO_PROVIDER_HASHICORP_VAULT")
+	addr := os.Getenv("CRYPTO_PROVIDER_HASHICORP_VAULT_ADDRESS")
 	if addr == "" {
 		addr = "0.0.0.0:50051"
 	}
