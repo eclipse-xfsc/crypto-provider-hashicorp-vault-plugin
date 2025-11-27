@@ -5,7 +5,7 @@ go 1.24.0
 toolchain go1.24.10
 
 require (
-	github.com/eclipse-xfsc/crypto-provider-core/v2 v2.2.0
+	github.com/eclipse-xfsc/crypto-provider-core/v2 v2.2.1
 	github.com/hashicorp/vault/api v1.22.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/viper v1.21.0
